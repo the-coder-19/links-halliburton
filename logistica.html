@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transporte e Hospedagem</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 50px 0;
+      background-color: rgb(196, 21, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+	padding: 0 20px;
+    }
+
+    .float-button {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 15px;
+      padding: 40px 40px;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      flex: 1 1 35%; /* Para responsividade (2 por linha) */
+
+    }
+
+    .float-button:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+        @media (max-width: 600px) {
+	body {
+	padding: 50px 10px;
+	}
+
+      .button-container {
+        gap: 40px; /* Espaçamento dobrado no mobile */
+      }
+
+      .float-button {
+        flex: 1 1 calc(50% - 20px); /* 2 por linha com espaço */
+	padding: 30px 20px;
+	font-size: 16px;
+	max-width: none;
+      }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+
+	<a href="https://srq.halliburton.7itec.io/#/auth/login" class="float-button" target="_blank">SMART REQUEST (VOUCHER / TRANSPORTE)</a>
+
+	<a href="https://apps.powerapps.com/play/e/default-b7be7686-6f97-4db7-9081-a23cf09a96b5/a/82ec6e72-c321-4275-9a9d-ea7e904f8b33?tenantId=b7be7686-6f97-4db7-9081-a23cf09a96b5&source=portal" class="float-button" target="_blank">JOURNEY MANAGEMENT / GERENCIAMENTO DE VIAGENS</a>
+
+	<a href="https://ctm.bcdtravel.com.br/bcd/default.aspx?cliente=halliburton" class="float-button" target="_blank">PEDIDO DE HOTEL (BCD TRAVEL)</a>
+
+	<a href="https://profilemanager.bcdtravel.com/wpms/Src/Code/WpmsSc/INTERFACES/WPMSSCUSERSTATUS/WpmsScLoginDetails.aspx" class="float-button" target="_blank">BCD TRAVEL - ATUALIZAÇÃO DE PERFIL</a>
+
+  </div>
+</body>
+</html>
